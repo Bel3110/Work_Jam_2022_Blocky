@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1658349131.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "¡La tecnología es increíble!"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.3",
+		"file": "timeline-1658349178.json",
+		"name": "timeline-1"
+	}
+}
