@@ -1,19 +1,170 @@
+<<<<<<< HEAD
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://resources/Screenshot 202biblioteca.png" type="Texture" id=1]
+[ext_resource path="res://resources/librorojo.png" type="Texture" id=2]
+[ext_resource path="res://scenes/levels/zonaroja.gd" type="Script" id=3]
+[ext_resource path="res://scenes/levels/prueba.gd" type="Script" id=4]
+[ext_resource path="res://resources/librorosa.png" type="Texture" id=5]
+[ext_resource path="res://resources/libromoradot.png" type="Texture" id=6]
+[ext_resource path="res://scenes/levels/zonarosa.gd" type="Script" id=7]
+[ext_resource path="res://scenes/levels/zonamorada.gd" type="Script" id=8]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 27.5, 18 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 32.5, 24.5 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 24.5, 15.5 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 24.5, 17.5 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 183.5, 6.5 )
+=======
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://resources/Screenshot 202biblioteca.png" type="Texture" id=1]
 [ext_resource path="res://scenes/levels/Puzzle1.tscn" type="PackedScene" id=2]
 [ext_resource path="res://resources/librorosa.png" type="Texture" id=3]
 [ext_resource path="res://resources/libromoradot.png" type="Texture" id=4]
+>>>>>>> e0c69dd052fccc2c6574df5fd80aebc3e71affe6
 
 [node name="TextureRect" type="TextureRect"]
 margin_right = 40.0
 margin_bottom = 40.0
 
+<<<<<<< HEAD
+[node name="Sprite_Librero" type="Sprite" parent="."]
+=======
 [node name="Screenshot202Biblioteca" type="Sprite" parent="."]
+>>>>>>> e0c69dd052fccc2c6574df5fd80aebc3e71affe6
 position = Vector2( 286, 181 )
 scale = Vector2( 0.6794, 0.6794 )
 texture = ExtResource( 1 )
 
+<<<<<<< HEAD
+[node name="zonaroja" type="Area2D" parent="."]
+position = Vector2( 193, 75 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="zonaroja"]
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="libro_rojo" type="Area2D" parent="." groups=["test"]]
+position = Vector2( 318, 74 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="libro_rojo"]
+position = Vector2( -1.90735e-06, -1.90735e-06 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="libro_rojo"]
+position = Vector2( -0.5, 0.5 )
+shape = SubResource( 2 )
+
+[node name="libro_rosa" type="Area2D" parent="." groups=["rosa"]]
+position = Vector2( 204, 212 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="libro_rosa"]
+position = Vector2( -1.90735e-06, -1.90735e-06 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="libro_rosa"]
+position = Vector2( -0.5, 0.5 )
+shape = SubResource( 2 )
+
+[node name="libro_morado" type="Area2D" parent="." groups=["morado"]]
+position = Vector2( 382, 144 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="libro_morado"]
+position = Vector2( -1.90735e-06, -1.90735e-06 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="libro_morado"]
+position = Vector2( -0.5, 0.5 )
+shape = SubResource( 2 )
+
+[node name="zonarosa" type="Area2D" parent="."]
+position = Vector2( 380, 217 )
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="zonarosa"]
+shape = SubResource( 3 )
+
+[node name="zonamorada" type="Area2D" parent="."]
+position = Vector2( 280, 147 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="zonamorada"]
+shape = SubResource( 4 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( 297, 109 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2( 297, 109 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2( -7, -69 )
+shape = SubResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2( 297, 109 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2( -7, 140 )
+shape = SubResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[connection signal="area_entered" from="zonaroja" to="zonaroja" method="_on_zonaroja_area_entered"]
+[connection signal="body_entered" from="zonaroja" to="zonaroja" method="_on_zonaroja_body_entered"]
+[connection signal="input_event" from="libro_rojo" to="libro_rojo" method="_on_prueba_input_event"]
+[connection signal="input_event" from="libro_rosa" to="libro_rosa" method="_on_prueba_input_event"]
+[connection signal="input_event" from="libro_morado" to="libro_morado" method="_on_prueba_input_event"]
+[connection signal="area_entered" from="zonarosa" to="zonarosa" method="_on_zonarosa_area_entered"]
+[connection signal="area_entered" from="zonamorada" to="zonamorada" method="_on_zonamorada_area_entered"]
+=======
 [node name="Libro Rojo" parent="." instance=ExtResource( 2 )]
 position = Vector2( 205, 77 )
 scale = Vector2( 1.5, 1.5 )
@@ -35,3 +186,4 @@ texture = ExtResource( 3 )
 [editable path="Libro Rojo"]
 [editable path="Libro Morado"]
 [editable path="Libro Rosa"]
+>>>>>>> e0c69dd052fccc2c6574df5fd80aebc3e71affe6

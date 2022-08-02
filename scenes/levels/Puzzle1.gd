@@ -20,3 +20,7 @@ func _on_Area2D_input_event(viewport, event, shape_idx):
 			selected = true 
 		else:
 			selected = false
+<<<<<<< HEAD
+
+=======
+>>>>>>> e0c69dd052fccc2c6574df5fd80aebc3e71affe6
